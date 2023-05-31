@@ -11,7 +11,7 @@
     "@tailwindcss/forms": "^0.3.4",
     "better-react-spinkit": "^2.0.4",
     "faker": "^5.5.3",
-    "next": "latest",
+    "next": "^11.1.2",
     "next-auth": "4.0.0-beta.5",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
@@ -20,7 +20,8 @@
     "react-spotify-web-playback": "^0.9.1",
     "recoil": "^0.4.1",
     "spotify-web-api-node": "^5.0.2",
-    "tailwind-scrollbar-hide": "^1.0.3"
+    "tailwind-scrollbar-hide": "^1.0.3",
+    "usehooks-ts": "^2.9.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
