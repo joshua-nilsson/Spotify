@@ -4,6 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useEffect } from "react";
 import Loader from "../../components/Loader";
+import Modal from "../../components/Modal";
 
 function Signin({ providers }) {
   const { data: session } = useSession();
@@ -24,7 +25,7 @@ function Signin({ providers }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Image
-        src="https://rb.gy/y9mwtb"
+        src="/logo.jpg"
         height={250}
         width={600}
         objectFit="contain"
@@ -38,8 +39,9 @@ function Signin({ providers }) {
           >
             Sign in with {provider.name}
           </button>
-        </div>
-      ))}
+		  </div>
+	    ))}
+		  <Modal />
     </div>
   );
 }
