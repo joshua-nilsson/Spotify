@@ -1,11 +1,17 @@
+const { screens } = require('tailwindcss/defaultTheme');
+
 module.exports = {
   mode: "jit",
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {
-      screens: {
-        "2xl": "1500px",
+	  extend: {
+		screens: {
+			xs: '350px',
+			msm: '425px',
+			...screens,
+			"2xl": "1500px",
+			'3xl': '2250px'
       },
       keyframes: {
         pulse: {
